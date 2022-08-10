@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <center><h1 style="color: black;">Simple Calculator</h1></center>
+    <section class="calculator" id="calculator">
+        <table class="calculator-body" id="calculator-body">
+            <tr>
+                <td class="screen-col" id="screen-col" colspan="3">
+                    <div class="calculator-screen" id="calculator-screen"></div>
+                </td>
+                <td onclick="clear1()">
+                    <div class="clear-btn" id="clear-btn">Clear</div>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="insert('1')">1</td>
+                <td onclick="insert('2')">2</td>
+                <td onclick="insert('3')">3</td>
+                <td onclick="opentered(1)">/</td>
+            </tr>
+            <tr>
+                <td onclick="insert('4')">4</td>
+                <td onclick="insert('5')">5</td>
+                <td onclick="insert('6')">6</td>
+                <td onclick="opentered(2)">x</td>
+            </tr>
+            <tr>
+                <td onclick="insert('7')">7</td>
+                <td onclick="insert('8')">8</td>
+                <td onclick="insert('9')">9</td>
+                <td onclick="opentered(3)">+</td>
+            </tr>
+            <tr>
+                <td onclick="insert('0')">0</td>
+                <td onclick="insert('.')">.</td>
+                <td onclick="calculate()">=</td>
+                <td onclick="opentered(4)">-</td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
