@@ -22,8 +22,9 @@ function insert(n){
 }
 
 function opentered(n){
-    if(input1==0)
-        return;
+    
+    if(input1==""){
+        return;}
     else if(input1!=0&&input2!=0&&opsign!=0){
         calculate();
     }
@@ -34,7 +35,6 @@ function opentered(n){
 }
 
 function calculate(){
-    console.log('was here..');
     if(input1==0)
         return;
     if(input2==0)
@@ -71,9 +71,9 @@ function calculate(){
 
 
 function clear1(){
-    input1 = input2 = '';
-    opsign = 0;
-    output_screen.innerHTML = "";
+    input1 = input2 = "";
+    inputsel = 0;
+    //opsign = 0;
 }
 
 
